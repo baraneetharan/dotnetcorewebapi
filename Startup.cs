@@ -58,6 +58,8 @@ namespace dotnetcorewebapi
 
             app.UseRouting();
 
+            app.UseCors(AllowAllOriginsPolicy);
+
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
